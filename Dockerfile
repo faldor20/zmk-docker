@@ -96,6 +96,7 @@ RUN \
   && apt-get -y update \
   && apt-get -y install --no-install-recommends \
   wget \
+  zstd \
   xz-utils \
   && cd ${TMP} \ 
   && wget -q "https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v${ZEPHYR_SDK_VERSION}/${minimal_sdk_file_name}.tar.gz" \
